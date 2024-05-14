@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Layout Maeztra</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -41,9 +39,9 @@
 
                         </div>
                         <div class="navigation">
-                            <div class="account">Minha conta</div>
-                            <div class="wishlist">Favorites</div>
-                            <div class="cart">Meu Carrinho</div>
+                            <div class="account"><img src="svgs/user.svg"> Minha conta</div>
+                            <div class="wishlist"><img src="svgs/heart.svg">Favorites</div>
+                            <div class="cart"><img src="svgs/bag.svg">Meu Carrinho</div>
                         </div>
                     </div>
                 </div>
@@ -51,7 +49,7 @@
                 <div class="menu-header">
                     <div class="wrapper">
                         <ul class="">
-                            <li class="highlight">Novidades</li>
+                            <li class="highlight"><img src="svgs/dress.svg">Novidades</li>
                             <li class="">Vestidos</li>
                             <li class="">Roupas</li> 
                             <li class="">Sapatos</li> 
@@ -79,10 +77,62 @@
 
             </div>
 
+
+
             <div class="general-conditions">
                 <div class="conditions-title">Por que comprar na Maeztra?</div>
                 <div class="conditions-content">
-                    <div class="card"></div>
+
+                    <div class="card products">
+                        <img src="svgs/world.svg">
+                        <div class="content-card">
+                            <div class="conditions-card-title">Produtos importantes</div>
+                            <div class="conditions-card-subtitle">Produto de Alta Qualidade</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card products">
+                        <img src="svgs/stoke.svg">
+                        <div class="content-card">
+                            <div class="conditions-card-title">Estoque no Brazil</div>
+                            <div class="conditions-card-subtitle">Produtos mais perto de você!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card products">
+                        <img src="svgs/box.svg">
+                        <div class="content-card">
+                            <div class="conditions-card-title">Trocas Garantidas</div>
+                            <div class="conditions-card-subtitle">Trocas em 48 horas, vejas regras</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card products">
+                        <img src="svgs/tag.svg">
+                        <div class="content-card">
+                            <div class="conditions-card-title">Ganhe 5% off</div>
+                            <div class="conditions-card-subtitle">Pagando à vista no Cartão</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card products">
+                        <img src="svgs/truck.svg">
+                        <div class="content-card">
+                            <div class="conditions-card-title">Frete Grátis</div>
+                            <div class="conditions-card-subtitle">Em compras acima de R$ 499,00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-brands">
+                <div class="brands-title">Marcas Parceiras</div>
+                <div class="brands-content">
+                    <div class="brand"><img src="brands/comma.jpg"></div>
+                    <div class="brand"><img src="brands/melissa.jpg"></div>
+                    <div class="brand"><img src="brands/forever_21.jpg"></div>
+                    <div class="brand"><img src="brands/zara.jpg"></div>
+                    <div class="brand"><img src="brands/ann_taylor.jpg"></div>
                 </div>
             </div>
 
@@ -104,9 +154,27 @@
           $('.fullbanner').slick({
             infinite: true,
             speed: 300,
-            dots: true
+            dots: true,
+            prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
+            nextArrow:"<button type='button' class='slick-next pull-right'></button>"
+       
+          });
+          $('.brands-content').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            speed: 300,
+          });
+          $('.conditions-content').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            speed: 300,
           });
         });
+        
       </script>
 </body>
 </html>
