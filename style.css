@@ -28,6 +28,13 @@ input {
 input::placeholder{
     color: #353535;
   }
+@media (min-width: 767px) {
+    .mobile {
+        display: none; /* Exibe o conteúdo apenas em telas menores */
+}
+}
+
+
 
 
 body {
@@ -49,21 +56,23 @@ body #header {
 	max-width: 100%;
 	width: 100%;
 	padding: 0;
-    min-height: 1500px;
+    margin-bottom: 77px;
 }
 .wrapper-content {
 	max-width: 1224px;
 	margin: 0 auto;
 }
 .wrapper {
-	width: 1598px;
+	max-width: 1598px;
 	margin: 0 auto;
 }
 #content-wrapper {
 	max-width: 1210px;
 	margin: 0 auto;
 }
-
+.showcase {
+    margin-bottom: 77px;
+}
 
 
 body #header .top-header {
@@ -79,19 +88,30 @@ body #header .top-header .input-wrapper {
     display: inline-flex;
 }
 
+body #header .main-header .logo {
+    cursor: pointer;
+}
 body #header .main-header {
     background-color: #fff;
 }
 body #header .main-header .search {
+
     position: relative;
+    width: 100%;
+    max-width: 791px;
+    margin: 0 145px 0 91px;
+}
+body #header .main-header .search .input-wrapper {
+    display: contents;
 }
 body #header .main-header .search input {
-    width: 791px;
+    width: 100%;
     height: 40px;
     background-color: #efefef;
     border: 0px;
     border-radius: 10px;
     padding-left: 24px;
+    box-sizing: border-box;
 }
 body #header .main-header .search button {
     width: 119px;
@@ -118,9 +138,13 @@ body #header .main-header .navigation {
 body #header .main-header .navigation > div {
     display: flex;
     cursor: pointer;
+    margin-right: 32px;
 }
 body #header .main-header .navigation > div img {
     margin-right: 8px;
+}
+body #header .main-header .navigation .account span {
+    width: 80px;
 }
 body #header .main-header .navigation .cart {
     width: 134px;
@@ -131,6 +155,7 @@ body #header .main-header .navigation .cart {
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    margin: 0;
 }
 
 /* MENU HEADER */
@@ -163,13 +188,19 @@ body #header .main-header .menu-header .wrapper ul li.highlight {
 body #header .main-header .menu-header .wrapper ul li.highlight img {
     margin-right: 8px;
 }
-
+body #header .main-header .menu-header .wrapper .conditions-content .card img {
+    margin-right: 10px;
+}
 
 /* FULL BANNER */
 
-.fullbanner img {
+.fullbanner {
     width: 100%;
     height: 100%;
+}
+
+.fullbanner .banner img {
+    width: 100%;
 }
 
 
@@ -211,42 +242,70 @@ body #header .main-header .menu-header .wrapper ul li.highlight img {
 .slick-prev:before, .slick-next:before {
 
 }
-.slick-prev:before {
-    background-image: url('svgs/arrow_left.svg');
-
-    
+.fullbanner .slick-next {
+    right: 7%;
 }
-.slick-next:before {
-    background-image: url('svgs/arrow_right.svg');
+.fullbanner .slick-prev {
+    left: 7%;
+    z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+    display: none;
 }
 
 
 
 .general-conditions {
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.conditions-content .card {
-    max-width: 307px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 12px;
-    background-color: #efefef;
-}
-.conditions-title {
-    font-family: Titillium Web;
+
+.general-conditions .conditions-title {
     font-size: 16px;
     font-weight: 700;
     line-height: 24.34px;
     text-align: center;
     margin-bottom: 18px;
 }
-.card.products.slick-slide.slick-active {
+
+.general-conditions .conditions-content .card {
+    padding: 15px 5px 15px 27px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #efefef;
+    margin-right: 15px;
+    border-radius: 4px;
     display: flex;
 }
+.general-conditions .card.products.slick-slide.slick-active {
+    display: flex;
+}
+.general-conditions .card img {
+    margin-right: 23px;
+}
+.conditions-content .card .content-card .conditions-card-title{
+    font-weight: bold;
+}
+.conditions-content .card .content-card .conditions-card-subtitle {
+    min-width: 210px;
+}
 
-
+.carousel-brands {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-brands .brands-content {
+    width: 1598px;
+}
 .carousel-brands .brand {
     float: left;
+}
+.carousel-brands .brand img {
+    margin: 0 auto;
 }
 .carousel-brands .brands-title {
     font-family: Titillium Web;
@@ -256,6 +315,102 @@ body #header .main-header .menu-header .wrapper ul li.highlight img {
     text-align: center;
     margin-bottom: 22px;
 }
-div#footer {
-    height: 496px;
+
+
+
+/* MIDDLE  */
+
+.showcase .showcase-title {
+    font-family: Titillium Web;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48.67px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.product-discription {
+    width: 308px;
+}
+
+
+
+.banner-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-showcase .discription {
+    max-width: 420px;
+}
+.banner-showcase .discription .discription-title{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.banner-showcase .discription-content {
+    font-size: 14px;
+}
+
+
+/* FOOTER  */
+
+.wrapper-footer {
+    max-width: 950px;
+}
+.wrapper-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter {
+    border-top: 2px solid #efefef;
+    border-bottom: 2px solid #efefef;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+}
+.newsletter-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 80px;
+}
+.footer {
+    background-color: #333;
+    width: 100%;
+    height: 85px;
+}
+
+/* MOBILE */
+
+
+@media (max-width: 767px) {
+    body {             
+        padding-top: 112px;
+    }
+    body #header .main-header .navigation,
+    body #header .main-header .search,
+    #header .menu-header {
+        display: none;
+    }
+    .hamburguer.mobile {
+        padding: 20px;
+        display: flex;
+    }
+    .navigation-mobile.mobile {
+        display: flex;
+        align-items: center;
+    }
+    .navigation-mobile.mobile > div {
+        margin: 20px;
+    }
+    body #header .main-header .logo {
+        cursor: pointer;
+        margin-right: 70px;
+    }
+    body #header .main-header .main-bar .logo-content {
+        display: flex;
+        align-items: center;
+    }
+    
 }

@@ -26,10 +26,24 @@
             <div class="main-header">
                 <div class="main-bar">
                     <div class="wrapper">
-                        <div class="logo">
-                            <img src="logo/logo-maeztra-novo.png">
-                            
+
+                        <div class="logo-content">
+                            <div class="hamburguer mobile">
+                                <img src="svgs/hamburguer.svg">
+                            </div>
+
+                            <div class="logo">
+                                
+                                <picture>
+                                    <!-- Imagem para dispositivos com largura maior que 768px -->
+                                    <source media="(min-width: 768px)" srcset="logo/logo-maeztra-novo.png">
+                                    <!-- Imagem para dispositivos com largura menor ou igual a 768px -->
+                                    <img src="logo/logo_maeztra_mobile.png" alt="logo">
+                                </picture> 
+                                
+                            </div>
                         </div>
+
                         <div class="search">
 
                             <div class="input-wrapper"> 	
@@ -39,9 +53,13 @@
 
                         </div>
                         <div class="navigation">
-                            <div class="account"><img src="svgs/user.svg"> Minha conta</div>
-                            <div class="wishlist"><img src="svgs/heart.svg">Favorites</div>
-                            <div class="cart"><img src="svgs/bag.svg">Meu Carrinho</div>
+                            <div class="account"><img src="svgs/user.svg"><span> Minha conta</span></div>
+                            <div class="wishlist"><img src="svgs/heart.svg"><span>Favorites</span></div>
+                            <div class="cart"><img src="svgs/bag.svg"><span>Meu Carrinho</span></div>
+                        </div>
+                        <div class="navigation-mobile mobile">
+                            <div class="account"><img src="svgs/search.svg"></div>
+                            <div class="cart"><img src="svgs/bag_mobile.svg"></div>
                         </div>
                     </div>
                 </div>
@@ -70,10 +88,27 @@
 
             <div class="fullbanner"> 
 
-                    <div class="banner"><img src="banners/fullbanner.jpg"></div>
-                    <div class="banner"><img src="banners/fullbannerpb.jpg"></div>
+                    <div class="banner first-banner">
+
+                        <picture>
+                            <!-- Imagem para dispositivos com largura maior que 768px -->
+                            <source media="(min-width: 768px)" srcset="banners/fullbanner.jpg">
+                            <!-- Imagem para dispositivos com largura menor ou igual a 768px -->
+                            <img src="banners/fullbanner-mobile.jpg" alt="Imagem para dispositivos móveis">
+                        </picture>   
+
+                    </div>
+
+                    <div class="banner">
+                        <picture>
+                        <!-- Imagem para dispositivos com largura maior que 768px -->
+                        <source media="(min-width: 768px)" srcset="banners/fullbannerpb.jpg">
+                        <!-- Imagem para dispositivos com largura menor ou igual a 768px -->
+                        <img src="banners/fullbannerpb-mobile.jpg" alt="Imagem para dispositivos móveis">
+                        </picture>
 
 
+                    </div>
 
             </div>
 
@@ -133,14 +168,149 @@
                     <div class="brand"><img src="brands/forever_21.jpg"></div>
                     <div class="brand"><img src="brands/zara.jpg"></div>
                     <div class="brand"><img src="brands/ann_taylor.jpg"></div>
+                    <div class="brand"><img src="brands/comma.jpg"></div>
+                    <div class="brand"><img src="brands/melissa.jpg"></div>
+                    <div class="brand"><img src="brands/forever_21.jpg"></div>
+                    <div class="brand"><img src="brands/zara.jpg"></div>
+                    <div class="brand"><img src="brands/ann_taylor.jpg"></div>
                 </div>
             </div>
 
         </div>
 
+
+        <div id="middle">
+            <div class="wrapper">
+
+                <div class="showcase">
+                    <div class="showcase-title">As Mais Pedidas</div>
+                    <div class="showcase-content">
+
+                        <div class="card item-product">
+                            <img src="imgs/showcase_1.jpg">
+                            <div class="product-discription">
+                                <div class="product-price">R$ 500,00</div>
+                                <div class="product-title">Faux Suede Mini Skirt</div>
+                                <div class="product-discription">A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</div>
+                                <div class="button">Adicionar</div>
+                            </div>
+                        </div>
+
+                        <div class="card item-product">
+                            <img src="imgs/showcase_2.jpg">
+                            <div class="product-discription">
+                                <div class="product-price">R$ 320,00</div>
+                                <div class="product-title">Ruched Rose Print Mini Skirt</div>
+                                <div class="product-discription">A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</div>
+                                <div class="button">Adicionar</div>
+                            </div>
+                        </div>
+
+                        <div class="card item-product">
+                            <img src="imgs/showcase_1.jpg">
+                            <div class="product-discription">
+                                <div class="product-price">R$ 500,00</div>
+                                <div class="product-title">Faux Suede Mini Skirt</div>
+                                <div class="product-discription">A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</div>
+                                <div class="button">Adicionar</div>
+                            </div>
+                        </div>
+
+                        <div class="card item-product">
+                            <img src="imgs/showcase_2.jpg">
+                            <div class="product-discription">
+                                <div class="product-price">R$ 320,00</div>
+                                <div class="product-title">Ruched Rose Print Mini Skirt</div>
+                                <div class="product-discription">A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</div>
+                                <div class="button">Adicionar</div>
+                            </div>
+                        </div>
+
+                        <div class="card item-product">
+                            <img src="imgs/showcase_1.jpg">
+                            <div class="product-discription">
+                                <div class="product-price">R$ 500,00</div>
+                                <div class="product-title">Faux Suede Mini Skirt</div>
+                                <div class="product-discription">A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</div>
+                                <div class="button">Adicionar</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> 
+
+
+
+                <div class="banner-showcase">
+                    <div class="discription">
+                        <div class="discription-title">Lorem ipsum </div>
+                        <div class="discription-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim dictum. Mattis proin ut quis donec sed eget nulla. Vel mi ut mauris integer. Nibh sagittis in lobortis sed cursus condimentum velit pharetra. Amet luctus ut vulputate scelerisque placerat consequat. Neque arcu mi iaculis id. Vel vitae, pharetra, a nec tristique. Feugiat id tortor eu mauris pulvinar velit massa. Ut ornare augue eget convallis volutpat aliquet. Sed sed pellentesque porttitor phasellus donec condimentum sit sapien.
+                        </div>
+                    </div>
+
+                    <div class="banner">
+                            <picture>
+
+                                <!-- Imagem para dispositivos com largura maior que 768px -->
+                                <source media="(min-width: 768px)" srcset="banners/banner-showcase.jpg">
+                                <!-- Imagem para dispositivos com largura menor ou igual a 768px -->
+                                <img src="banners/banner-showcase-mobile.jpg" alt="Imagem para dispositivos móveis">
+
+                            </picture>
+                    </div>
+
+                </div>
+
+            </div> 
+        </div>
+
         <div id="footer">
 
-
+            <div class="newsletter">
+                <div class="wrapper-footer">
+                    <div class="newsletter-title">Receba Nossa newsletter</div>
+                    <div class="newsletter-input">
+                        <input type="text" placeholder="Digite seu e-mail"> 			
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="wrapper-footer">
+                    <div class="column">
+                        <div class="column-title">Informações</div>
+                        <ul class="column-content">
+                            <li class="">Quem Somos</li>
+                            <li class="">Prazo de Envio</li> 
+                            <li class="">Trocas e Devoluções</li> 
+                            <li class="">Promoções e Cupons</li> 
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <div class="column-title">Minha Conta</div>
+                        <ul class="column-content">
+                            <li class="">Minha Conta</li>
+                            <li class="">Meus Pedidos</li> 
+                            <li class="">Cadastre-se</li> 
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <div class="column-title">ONde nos Encontrar</div>
+                        <ul class="column-content">
+                            <li class="">Lojas</li>
+                            <li class="">Endereço</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="social"></div>
+                    <div class="payment"></div>
+                    <div class="powered"></div>
+                </div>
+            </div>
 
         </div>
 
@@ -152,26 +322,115 @@
     <script type="text/javascript">
         $(document).ready(function(){
           $('.fullbanner').slick({
+            autoplay: true,
+            autoplaySpeed: 4000,
             infinite: true,
             speed: 300,
             dots: true,
-            prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
-            nextArrow:"<button type='button' class='slick-next pull-right'></button>"
+            prevArrow:"<button type='button' class='slick-prev pull-left'><img src='svgs/arrow_left.svg'></button>",
+            nextArrow:"<button type='button' class='slick-next pull-right'><img src='svgs/arrow_right.svg'></button>"
        
           });
           $('.brands-content').slick({
-            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
             arrows: false,
             slidesToShow: 5,
             slidesToScroll: 1,
             speed: 300,
+            responsive: [
+                {
+                    breakpoint: 1500, // for short desktop
+                    settings: {
+                        slidesToShow: 4,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 600, // for tablets
+                    settings: {
+                        slidesToShow: 3,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 480, // for mobile
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                }
+            ]
           });
           $('.conditions-content').slick({
+            autoplay: true,
+            autoplaySpeed: 4000,
             infinite: true,
             arrows: false,
             slidesToShow: 5,
             slidesToScroll: 1,
             speed: 300,
+            responsive: [
+                {
+                    breakpoint: 1500, // for short desktop
+                    settings: {
+                        slidesToShow: 4,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 600, // for tablets
+                    settings: {
+                        slidesToShow: 3,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 480, // for mobile
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                }
+            ]
+          });
+          $('.showcase-content').slick({
+            arrows: true,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1500, // for short desktop
+                    settings: {
+                        slidesToShow: 4,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 600, // for tablets
+                    settings: {
+                        slidesToShow: 3,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 480, // for mobile
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: true,
+                        variableWidth: true
+                    }
+                }
+            ]
           });
         });
         
